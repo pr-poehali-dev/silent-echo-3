@@ -18,12 +18,12 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
                 isVisible ? "translate-y-0 opacity-100" : "-translate-y-12 opacity-0"
               }`}
             >
-              <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
-                Создаем
+              <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-5xl lg:text-6xl">
+                Платформа,
                 <br />
-                будущее
+                которая работает
                 <br />
-                <span className="text-foreground/40">цифровых</span>
+                <span className="text-foreground/40">вместо тебя</span>
               </h2>
             </div>
 
@@ -34,10 +34,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Мы команда дизайнеров, разработчиков и технологов, которые создают исключительные цифровые продукты.
+                Мы забираем у селлеров все операционные этапы: от поиска поставщиков до отгрузки товаров.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Каждый проект — это возможность исследовать новые решения и раздвигать границы возможного.
+                Ты занимаешься только выбором стратегии и продвижением своего магазина — всё остальное на нас.
               </p>
             </div>
           </div>
@@ -45,9 +45,9 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "150+", label: "Проектов", sublabel: "Реализовано по всему миру", direction: "right" },
-              { value: "8", label: "Лет", sublabel: "Опыта и инноваций", direction: "left" },
-              { value: "12", label: "Наград", sublabel: "Отраслевое признание", direction: "right" },
+              { value: "0%", label: "Товарных рисков", sublabel: "Торгуешь без закупки товара", direction: "right" },
+              { value: "100%", label: "Автоматизация", sublabel: "Все рутинные процессы за нас", direction: "left" },
+              { value: "×3", label: "Оборачиваемость", sublabel: "Капитал работает эффективнее", direction: "right" },
             ].map((stat, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {
@@ -84,10 +84,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           style={{ transitionDelay: "750ms" }}
         >
           <MagneticButton size="lg" variant="primary" onClick={() => scrollToSection?.(4)}>
-            Начать проект
+            Подключиться к платформе
           </MagneticButton>
           <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection?.(1)}>
-            Смотреть работы
+            Узнать о проблемах
           </MagneticButton>
         </div>
       </div>
